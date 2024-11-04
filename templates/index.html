@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <form action="/shorten" method="post">
+        <input autocomplete="off" type="text" id="original_link" name="original_link" placeholder="Paste your link" required>
+        <button type="submit">Shorten</button>
+    </form>
+{%endblock%}
